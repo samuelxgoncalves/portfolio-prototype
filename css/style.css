@@ -41,6 +41,7 @@ header h1 {
     color: var(--color02);
     font-family: var(--highlight-font);
     font-size: 40px;
+    text-align: center;
     letter-spacing: 5px;
     text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.637);
     min-width: 440px;
@@ -56,8 +57,9 @@ header p {
     font-family: var(--highlight-font);
     font-size: 16px;
     font-weight: 300;
+    text-align: center;
     letter-spacing: 3px;
-    top: 66%;
+    top: 75%;
     left: 50%;
     transform: translate(-50%, -50%);
 }
@@ -71,7 +73,7 @@ img#logo {
 }
 
 nav {
-    z-index: 2;
+    z-index: 3;
     position: sticky;
     top: 0;
     background-color: #383838e1;
@@ -181,29 +183,36 @@ main section {
     z-index: 2;
     position: relative;
     background-color: #d9d9d971;
-    height: 370px;
     padding: 10px;
     margin: 70px 25px 70px 25px;
     box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.185);
 }
 
 main section#about-me {
+    height: 370px;
     border-top-left-radius: 3px;
     border-top-right-radius: 3px;
 }
 
-main section#about-me img {
+main section#about-me div#self-image {
+    background-color: black;
+    background-image: url('../images/me.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    width: 300px;
+    height: 300px;
     position: absolute;
-    right: 18%;
-    bottom: 50%;
-    transform: translate(50%, 50%);
+    top: 50%;
+    right: 3%;
+    transform: translate(0%, -50%);
     border-radius: 50%;
-    box-shadow: 3px 3px rgba(0, 0, 0, 0.534);
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.61);
 }
 
 main section#education {
     width: 65%;
-    height: 320px;
+    padding-right: 30px;
+    padding-bottom: 30px;
 }
 
 main section#education h1 {
@@ -212,5 +221,14 @@ main section#education h1 {
 
 main section#education p {
     width: 100%;
-    margin-left: 0px;
+}
+
+main section#education aside div#education-image {
+    background-image: url('../images/education.png');
+    width: 250px;
+    height: 250px;
+    position: absolute;
+    top: 50%;
+    right: -37%;
+    transform: translate(0%, -50%) rotate(15deg);
 }
