@@ -26,36 +26,53 @@ body {
 }
 
 header {
+    position: relative;
     background-color: var(--color05);
     height: 195px;
 }
 
 header h1 {
+    z-index: 2;
+    position: absolute;
     color: var(--color02);
     font-family: var(--highlight-font);
-    text-align: center;
-    letter-spacing: 3px;
-    padding-top: 65px;
+    letter-spacing: 5px;
+    min-width: 370px;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 header p {
+    z-index: 2;
+    position: absolute;
     color: var(--color03);
     font-family: var(--highlight-font);
     font-weight: 300;
-    text-align: center;
     letter-spacing: 3px;
-    padding-top: 10px;
+    top: 65%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+img#logo {
+    z-index: 1;
+    position: absolute;
+    top: 20%;
+    right: 20%;
 }
 
 nav {
+    z-index: 2;
     position: sticky;
     top: 0;
-    background-color: var(--color05);
+    background-color: #383838e1;
     padding: 10px 0px;
     box-shadow: 0px 16px 10px -15px rgba(0, 0, 0, 0.418);
 }
 
 nav a.nav_link {
+    z-index: 2;
     color: var(--color02);
     text-decoration: none;
     font-family: var(--link-font);
@@ -68,7 +85,7 @@ nav a.nav_link {
 }
 
 nav a.nav_link:first-child {
-    margin-left: 20px;
+    margin-left: 15px;
 }
 
 nav a.nav_link:hover {
@@ -82,7 +99,7 @@ nav div#language {
     display: inline-block;
     position: absolute;
     font-size: 10px;
-    top: 20%;
+    top: 12%;
     right: 0.5%;
     margin: 0px;
     padding: 7px 15px;
@@ -115,8 +132,8 @@ nav div#language span#language_tooltip {
 
     position: absolute;
     z-index: 1;
-    top: 0%;
-    right: 110%;
+    top: 140%;
+    right: 0%;
     margin-left: -60px;
 
     opacity: 0;
