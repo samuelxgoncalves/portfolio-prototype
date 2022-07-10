@@ -73,24 +73,25 @@ img#logo {
 }
 
 nav {
+    background-color: #383838ea;
     z-index: 3;
     position: sticky;
     top: 0;
-    background-color: #383838e1;
+    height: 20px;
     padding: 10px 0px;
     box-shadow: 0px 16px 10px -15px rgba(0, 0, 0, 0.418);
 }
 
 nav a.nav_link {
-    color: var(--color02);
+    color: #c5c5c5;
     text-decoration: none;
     font-family: var(--link-font);
     font-size: 15px;
     text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.349);
     letter-spacing: 2px;
-    margin-right: 30px;
-    margin-left: 0px;
-    padding: 7px 25px;
+    margin-right: 50px;
+    margin-left: 5px;
+    padding: 12px 10px;
     transition: .3s;
 }
 
@@ -99,10 +100,8 @@ nav a.nav_link:first-child {
 }
 
 nav a.nav_link:hover {
-    background-color: var(--color02);
-    color: var(--color05);
-    font-weight: bold;
-    border-radius: 2px;
+    color: white;
+    padding: 12px 20px 12px 0px;
 }
 
 nav div#language {
